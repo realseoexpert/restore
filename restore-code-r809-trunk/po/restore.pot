@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: restore 4.0\n"
+"POT-Creation-Date: 2007-12-06 09:08-0700\n"
+"PO-Revision-Date: 2007-12-05 15:59-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: lib/restore/schedule/advanced.rb:29 lib/restore/schedule/advanced.rb:33
+#: lib/restore/schedule/advanced.rb:37 lib/restore/schedule/advanced.rb:41
+#: lib/restore/schedule/advanced.rb:45
+msgid "Invalid format"
+msgstr ""
+
+#: lib/restore/schedule/simple.rb:68
+msgid "You must choose at least one weekday"
+msgstr ""
+
+#: lib/restore/role.rb:32
+msgid "Read"
+msgstr ""
+
+#: lib/restore/role.rb:34
+msgid "Read/Write"
+msgstr ""
+
+#: lib/restore/role.rb:36
+msgid "Admin"
+msgstr ""
+
+#: lib/restore/client.rb:28 lib/restore/account/reseller.rb:26
+msgid "must be greater than 0"
+msgstr ""
+
+#: lib/restore/client.rb:29 lib/restore/account/reseller.rb:27
+msgid "exceeds your quota"
+msgstr ""
+
+#: lib/restore/restorer.rb:32
+msgid "Restore started at %s"
+msgstr ""
+
+#: lib/restore/restorer.rb:35
+msgid "Restore finished at %s"
+msgstr ""
+
+#: lib/restore/target/base.rb:107
+msgid "Quota limit reached"
+msgstr ""
+
+#: lib/restore/snapper.rb:45
+msgid "Snapshot started at %s"
+msgstr ""
+
+#: lib/restore/snapper.rb:54
+msgid "Snapshot Error"
+msgstr ""
+
+#: lib/restore/snapper.rb:54
+msgid "An error occured while snapshotting target %s: %s"
+msgstr ""
+
+#: lib/restore/snapper.rb:71
+msgid "Updating target size"
+msgstr ""
+
+#: lib/restore/snapper.rb:77
+msgid "Snapshot finished at %s. %s in %s seconds (%s)."
+msgstr ""
+
+#: lib/restore/snapper.rb:99
+msgid "cleaning"
+msgstr ""
+
+#: lib/restore/revision_schedule.rb:35
+msgid "You must supply a time unit"
+msgstr ""

@@ -1,0 +1,1 @@
+RESTORE_ROOT = File.join(File.dirname(__FILE__), '..', '..') unless defined?(RESTORE_ROOT)

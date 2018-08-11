@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+RESTORE_AGENT_ROOT = Pathname.new(File.dirname(__FILE__)+'/..').realpath.to_s
+$LOAD_PATH << File.join(RESTORE_AGENT_ROOT, 'lib')
+require File.join(RESTORE_AGENT_ROOT, 'lib', 'commands', 'snap')
+

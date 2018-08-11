@@ -1,0 +1,4 @@
+etc/restore/apache.conf
+usr/share/restore-frontend
+usr/lib/cgi-bin/restore-frontend
+

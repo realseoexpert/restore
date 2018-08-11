@@ -1,0 +1,49 @@
+Source: restore
+Section: web
+Priority: optional
+Maintainer: Adam Lebsack <adam@holonyx.com>
+Uploaders: Adam Lebsack <adam@holonyx.com>
+Build-Depends: debhelper (>= 4), rake, libgettext-ruby, irb
+Standards-Version: 3.7.2
+
+Package: restore-dc
+Architecture: all
+Depends: restore-dc-common, restore-dc-frontend
+Conflicts: restore-ee
+Description: Restore backup system (Data Center Edition)
+ Restore backup and restoration system (Data Center Edition)
+
+Package: restore-ee
+Architecture: all
+Depends: restore-ee-common, restore-ee-frontend
+Conflicts: restore-dc
+Description: Restore backup system (Enterprise Edition)
+ Restore backup and restoration system (Enterprise Edition)
+
+Package: restore-dc-common
+Architecture: all
+Depends: ruby, libmysql-ruby1.8, libruby1.8, ruby1.8, libdaemons-ruby, libfastthread-ruby, libjson-ruby1.8, libnet-ssh-ruby1.8 (>= 1.1.1), libnet-sftp-ruby, libslave-ruby, libsmb-ruby, rake, libtermios-ruby, libfcgi-ruby1.8, libzip-ruby, libmime-types-ruby, rails (>= 1.2.2), dbconfig-common, mysql-client, mysql-server-5.0, irb1.8, adduser, debconf, libgettext-ruby1.8 (>= 1.9.0)
+Conflicts: restore-ee
+Description: Restore backup system (Data Center Edition)
+ Restore backup and restoration system (Data Center Edition)
+
+Package: restore-ee-common
+Architecture: all
+Depends: ruby, libmysql-ruby1.8, libruby1.8, ruby1.8, libdaemons-ruby, libfastthread-ruby, libjson-ruby1.8, libnet-ssh-ruby1.8 (>= 1.1.1), libnet-sftp-ruby, libslave-ruby, libsmb-ruby, rake, libtermios-ruby, libfcgi-ruby1.8, libzip-ruby, libmime-types-ruby, rails (>= 1.2.2), dbconfig-common, mysql-client, mysql-server-5.0, irb1.8, adduser, debconf, libgettext-ruby1.8 (>= 1.9.0)
+Conflicts: restore-dc
+Description: Restore backup system (Enterprise Edition)
+ Restore backup and restoration system (Enterprise Edition)
+
+Package: restore-dc-frontend
+Architecture: all
+Depends: restore-dc-common, ruby, libmysql-ruby1.8, libruby1.8, ruby1.8, libdaemons-ruby, libfastthread-ruby, libjson-ruby1.8, libnet-ssh-ruby1.8 (>= 1.1.1), libnet-sftp-ruby, rake, libtermios-ruby, libfcgi-ruby1.8, libzip-ruby, libmime-types-ruby, libeventmachine-ruby, rails (>= 1.2.2), wwwconfig-common, libapache2-mod-fcgid, apache2, irb1.8, adduser, debconf, libgettext-ruby1.8 (>= 1.9.0)
+Conflicts: restore-ee-frontend
+Description: Restore backup system web frontend (Data Center Edition)
+ Restore backup and restoration system (Data Center Edition)
+
+Package: restore-ee-frontend
+Architecture: all
+Depends: restore-ee-common, ruby, libmysql-ruby1.8, libruby1.8, ruby1.8, libdaemons-ruby, libfastthread-ruby, libjson-ruby1.8, libnet-ssh-ruby1.8 (>= 1.1.1), libnet-sftp-ruby, rake, libtermios-ruby, libfcgi-ruby1.8, libzip-ruby, libmime-types-ruby, libeventmachine-ruby, rails (>= 1.2.2), wwwconfig-common, libapache2-mod-fcgid, apache2, irb1.8, adduser, debconf, libgettext-ruby1.8 (>= 1.9.0)
+Conflicts: restore-dc-frontend
+Description: Restore backup system web frontend (Enterprise Edition)
+ Restore backup and restoration system (Enterprise Edition)

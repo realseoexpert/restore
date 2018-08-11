@@ -1,0 +1,33 @@
+#!/bin/sh -e
+
+
+. /usr/share/debconf/confmodule
+. /usr/share/dbconfig-common/dpkg/postrm
+dbc_go %PACKAGE%-common $@
+
+
+case "$1" in
+    purge|remove)
+        if [ "$1" = "purge" ]; then
+                rm -f /etc/restore/database.yml
+                if which ucf >/dev/null 2>&1; then
+                        ucf --purge /etc/restore/database.yml
+                fi
+                db_purge || true
+        fi
+
+    ;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

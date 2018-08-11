@@ -1,0 +1,617 @@
+restore (4.0b39-1) gutsy; urgency=low
+
+  * Added empty list text
+  * When the wizard is done, it now goes to the target
+  * User can no longer edit themselves under the admin section
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Dec 2007 13:35:29 -0700
+
+restore (4.0b38-1) gutsy; urgency=low
+
+  * Many small bug fixes
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Dec 2007 12:15:57 -0700
+
+restore (4.0b37-1) gutsy; urgency=low
+
+  * Fixed inject bug on target totals
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 11 Dec 2007 15:32:04 -0700
+
+restore (4.0b36-1) gutsy; urgency=low
+
+  * Bug fixes in the settings tab
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 11 Dec 2007 15:02:23 -0700
+
+restore (4.0b35-1) gutsy; urgency=low
+
+  * Initial settings tab support
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 10 Dec 2007 15:50:48 -0700
+
+restore (4.0b34-1) gutsy; urgency=low
+
+  * Fix included for setting enabled_modules to a blank value
+  * Also fixed zip file restores with apache
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 07 Dec 2007 12:51:26 -0700
+
+restore (4.0b33-2) gutsy; urgency=low
+
+  * Fixed module tooltips
+  * Local target is now disabled by default
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 07 Dec 2007 12:09:51 -0700
+
+restore (4.0b33-1) gutsy; urgency=low
+
+  * Many fixed which are outlined on the trac site
+  * Initial gettext support
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 07 Dec 2007 11:51:36 -0700
+
+restore (4.0b32-1) gutsy; urgency=low
+
+  * A few more GUI updates
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 03 Dec 2007 10:05:41 -0700
+
+restore (4.0b31-1) gutsy; urgency=low
+
+  * Many bug fixes
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 30 Nov 2007 13:55:27 -0700
+
+restore (4.0b30-2) gutsy; urgency=low
+
+  * Oops, botched the minimum rails version requirement
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 28 Nov 2007 16:18:29 -0700
+
+restore (4.0b30-1) gutsy; urgency=low
+
+  * Fixed quota display in DC Edition
+  * Added port options for FTP, SFTP, and MySQL modules
+  * Fixed IE7 target clicking
+  * Rails > 1.2.1 is now required
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 28 Nov 2007 16:12:03 -0700
+
+restore (4.0b29-1) gutsy; urgency=low
+
+  * Added simple snapshot scheduling form
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 28 Nov 2007 12:05:10 -0700
+
+restore (4.0b28-1) gutsy; urgency=low
+
+  * Initial support for simple scheduling
+  * Fixed snapshots and restores of FTP targets
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 28 Nov 2007 10:24:19 -0700
+
+restore (4.0b27-4) gutsy; urgency=low
+
+  * Another attempt at fixing net-ssh dependency problem
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 26 Nov 2007 11:01:01 -0700
+
+restore (4.0b27-3) gutsy; urgency=low
+
+  * Another attempt at fixing net-ssh dependency problem
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 26 Nov 2007 10:52:33 -0700
+
+restore (4.0b27-2) gutsy; urgency=low
+
+  * Another attempt at fixing net-ssh dependency problem
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 26 Nov 2007 10:32:42 -0700
+
+restore (4.0b27-1) gutsy; urgency=low
+
+  * Made smaller home page icons
+  * Fixed admin section for enterprise edition
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 26 Nov 2007 09:15:18 -0700
+
+restore (4.0b26-1) gutsy; urgency=low
+
+  * Fixed dialogs in datacenter section
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 21 Nov 2007 16:08:09 -0700
+
+restore (4.0b25-1) gutsy; urgency=low
+
+  * More GUI changes
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 21 Nov 2007 15:52:09 -0700
+
+restore (4.0b24-1) gutsy; urgency=low
+
+  * More GUI updates
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 21 Nov 2007 15:35:09 -0700
+
+restore (4.0b23-1) gutsy; urgency=low
+
+  * More GUI updates
+  * Fixed user switching for rails 1.2.1
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 21 Nov 2007 11:58:53 -0700
+
+restore (4.0b22-2) gutsy; urgency=low
+
+  * Lax the rails dependency to >= 1.2.1
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 21 Nov 2007 11:36:27 -0700
+
+restore (4.0b22-1) gutsy; urgency=low
+
+  * More GUI changes
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 20 Nov 2007 14:13:28 -0700
+
+restore (4.0b21-2) gutsy; urgency=low
+
+  * Set minimum required rails version
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 19 Nov 2007 10:18:35 -0700
+
+restore (4.0b21-1) gutsy; urgency=low
+
+  * Many GUI updates.  Enjoy
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 16 Nov 2007 15:03:17 -0700
+
+restore (4.0b20-11) gutsy; urgency=low
+
+  * Fixed potential problem ins frontend postinst script
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 16 Nov 2007 09:07:23 -0700
+
+restore (4.0b20-10) gutsy; urgency=low
+
+  * Split libs and backend into -common pkg
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 16 Nov 2007 08:27:46 -0700
+
+restore (4.0b20-9) gutsy; urgency=low
+
+  * one last time
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 22:33:23 -0700
+
+restore (4.0b20-8) gutsy; urgency=low
+
+  * ugh, one more time
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 22:29:32 -0700
+
+restore (4.0b20-7) gutsy; urgency=low
+
+  * one more try
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 22:25:31 -0700
+
+restore (4.0b20-6) gutsy; urgency=low
+
+  * fixed again. :)
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 22:22:54 -0700
+
+restore (4.0b20-5) gutsy; urgency=low
+
+  * Fixed protential problem in restore-frontend when restore group does not
+    exist yet.
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 22:18:33 -0700
+
+restore (4.0b20-4) gutsy; urgency=low
+
+  * Fixed apache.conf existance in all pkgs
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 22:04:56 -0700
+
+restore (4.0b20-3) gutsy; urgency=low
+
+  * Fix for rails inclusion
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 10:45:53 -0700
+
+restore (4.0b20-2) gutsy; urgency=low
+
+  * Fixed dependencies
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 15 Nov 2007 10:39:47 -0700
+
+restore (4.0b20-1) gutsy; urgency=low
+
+  * New interface and other minor changes
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 14 Nov 2007 15:39:32 -0700
+
+restore (4.0b19-1) gutsy; urgency=low
+
+  * Fixed SFTP restores
+  * Fixed DRb to storage daemon when the hostanem can't be looked up
+  * Fixed 'restore clean' command
+  * Fixed FTP recursion bug
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 08 Nov 2007 15:42:17 -0700
+
+restore (4.0b18-6) unstable; urgency=low
+
+  * Fixed distroseries once again
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 07 Nov 2007 15:04:17 -0700
+
+restore (4.0b18-5) gutsy; urgency=low
+
+  * Now enabling mod_rewrite in postinst
+  * Adding www-data user to restore group for frontend package
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 07 Nov 2007 14:49:23 -0700
+
+restore (4.0b18-4) gutsy; urgency=low
+
+  * Second try on fixing /var/log/restore directory
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 07 Nov 2007 14:25:08 -0700
+
+restore (4.0b18-3) gutsy; urgency=low
+
+  * Added /var/log/restore to dirs
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 07 Nov 2007 13:22:21 -0700
+
+restore (4.0b18-2) gutsy; urgency=low
+
+  * changed distroseries
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 07 Nov 2007 12:02:44 -0700
+
+restore (4.0b18-1) unstable; urgency=low
+
+  * Removed lighttpd
+  * Added restore-*-frontend packages
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 07 Nov 2007 09:25:21 -0700
+
+restore (4.0b17-1) restore; urgency=low
+
+  * Added branding
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri,  2 Nov 2007 17:10:35 -0600
+
+restore (4.0b16-6) restore; urgency=low
+
+  * Fixed creation of the log directory
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri,  2 Nov 2007 16:03:02 -0600
+
+restore (4.0b16-5) restore; urgency=low
+
+  * Fixed dependencies for debian packages
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri,  2 Nov 2007 15:45:07 -0600
+
+restore (4.0b16-4) restore; urgency=low
+
+  * removed rails from the package
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri,  2 Nov 2007 15:16:22 -0600
+
+restore (4.0b16-3) restore; urgency=low
+
+  * Added ruby-eventmachine as a dependency
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu,  1 Nov 2007 09:44:42 -0600
+
+restore (4.0b16-2) restore; urgency=low
+
+  * Fixed dbconfig's database names
+  * Fixed creation of needed directories under /var/lib/restore
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 01 Nov 2007 08:34:12 -0600
+
+restore (4.0b16-1) restore; urgency=low
+
+  * Fixed the probe for which edition we're using
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 31 Oct 2007 15:22:21 -0600
+
+restore (4.0b15-1) restore; urgency=low
+
+  * Made new Enterprise Edition package
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 31 Oct 2007 08:22:59 -0600
+
+restore (4.0b14-1) restore; urgency=low
+
+  * Fixed sftp authentication error reporting
+  * Added a mkdir to the ssh-key install process
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 30 Oct 2007 10:53:44 -0600
+
+restore (4.0b13-1) restore; urgency=low
+
+  * Fixed scheduler startup bug
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 29 Oct 2007 15:43:39 -0600
+
+restore (4.0b12-1) restore; urgency=low
+
+  * Fixed SFTP restores
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 29 Oct 2007 14:50:04 -0600
+
+restore (4.0b11-1) restore; urgency=low
+
+  * Fixed ovverrides file in the frontend
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 29 Oct 2007 14:09:20 -0600
+
+restore (4.0b10-1) restore; urgency=low
+
+  * Fixed startup of the daemons
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 29 Oct 2007 13:44:14 -0600
+
+restore (4.0b9-1) restore; urgency=low
+
+  * The frontend now loads the restore lib environment
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 26 Oct 2007 16:37:35 -0600
+
+restore (4.0b8-1) restore; urgency=low
+
+  * Fixed views for ftp wizard
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 26 Oct 2007 16:23:52 -0600
+
+restore (4.0b7-1) restore; urgency=low
+
+  * Added bug report link
+  * Fixed main target listing's snapshot status
+  * Fixed snapshot error reporting
+  * Potential fix for some SFTP authentication errors
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 26 Oct 2007 15:47:39 -0600
+
+restore (4.0b6-2) restore; urgency=low
+
+  * Fixed some problems with debian packaging
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 26 Oct 2007 11:16:54 -0600
+
+restore (4.0b6-1) restore; urgency=low
+
+  * Began separation of the backend, frontend, and lib
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 25 Oct 2007 16:32:55 -0600
+
+restore (4.0b5-1) restore; urgency=low
+
+  * Fixed a socket unlink eror upon storage daemon startup
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 19 Oct 2007 13:31:09 -0600
+
+restore-dc (4.0b4-1) restore; urgency=low
+
+  * Added storage daemon, in order to facilitate external storage in future
+    releases
+  * Better module management
+
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 16 Oct 2007 16:34:42 -0600
+
+restore-dc (4.0b3-1) restore; urgency=low
+
+  * Fixed mailing errors
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 12 Oct 2007 16:42:09 -0600
+
+restore-dc (4.0b2-1) restore; urgency=low
+
+  * Allow unlimited system quota
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 12 Oct 2007 14:13:43 -0600
+
+restore-dc (4.0b1-1) restore; urgency=low
+
+  * Moved module controllers, views and models into their respective
+    directories
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 12 Oct 2007 10:06:10 -0600
+
+restore-dc (4.0a28-1) restore; urgency=low
+
+  * Enforced permissions
+  * Now creating new SSH keys for all sftp targets
+  * Fixed auto_increment on filesystem-based targets
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 11 Oct 2007 10:24:15 -0600
+
+restore-dc (4.0a27-1) restore; urgency=low
+
+  * Added permissions panel to targets -- still needs to be enforced
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 10 Oct 2007 14:45:31 -0600
+
+restore-dc (4.0a26-1) restore; urgency=low
+
+  * Fixed mysql sizes and pruning
+  * Fixed ownership of /var/lib/restore in postinst script
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 10 Oct 2007 09:58:56 -0600
+
+restore-dc (4.0a25-1) restore; urgency=low
+
+  * Email notifications added
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue,  9 Oct 2007 13:04:19 -0600
+
+restore-dc (4.0a24-1) restore; urgency=low
+
+  * Added quota checking
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue,  9 Oct 2007 09:55:57 -0600
+
+restore-dc (4.0a23-1) restore; urgency=low
+
+  * Fixed up size calculations for snapshots
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon,  8 Oct 2007 16:50:00 -0600
+
+restore-dc (4.0a22-1) restore; urgency=low
+
+  * fixed snapshot class loading
+  * fixed log file location for the development server
+  * 
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon,  8 Oct 2007 09:31:51 -0600
+
+restore-dc (4.0a21) restore; urgency=low
+
+  * Moved target schedule under lib
+  * Streamlined target module loading
+  * Fixed scheduler bug #6
+  * Some CSS and HTML cleanup
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri,  5 Oct 2007 14:17:22 -0600
+
+restore-dc (4.0a20) restore; urgency=low
+
+  * Added personal account manager
+  * Added non-flash based console
+  * Fixed security bug in backgroundrb logger
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu,  4 Oct 2007 16:58:59 -0600
+
+restore-dc (4.0a19-1) restore; urgency=low
+
+  * Fixed logfile location
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed,  3 Oct 2007 13:55:11 -0600
+
+restore-dc (4.0a18-1) restore; urgency=low
+
+  * Some source code cleanup
+  * Added Flash alternative with pollers in the frontend
+  * Fixed init script for the frontend
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed,  3 Oct 2007 10:41:51 -0600
+
+restore-dc (4.0a17-1) restore; urgency=low
+
+  * Fixed juggernaut log path
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 28 Sep 2007 09:28:16 -0600
+
+restore-dc (4.0a16-1) restore; urgency=low
+
+  * Fixed optional loading of rubygems
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 28 Sep 2007 09:10:35 -0600
+
+restore-dc (4.0a15-1) restore; urgency=low
+
+  * Reworked some configuration code
+  * Added ruby-termios as a dependency
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 27 Sep 2007 13:40:12 -0600
+
+restore-dc (4.0a14-1) restore; urgency=low
+
+  * Added setup script
+
+ -- Adam Lebsack <adam@holonyx.com>  Thu, 27 Sep 2007 09:02:12 -0600
+
+restore-dc (4.0a13-1) restore; urgency=low
+
+  * Fix ticket #1, don't ask for a sharename.  Just browse for it.
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 18 Sep 2007 15:56:51 -0600
+
+restore-dc (4.0a12-1) restore; urgency=low
+
+  * Start bumping the alpha versions instead of the dpkg revision
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 18 Sep 2007 13:58:07 -0600
+
+restore-dc (4.0a1-12) restore; urgency=low
+
+  *  Revamped DAV architecture, added mysql support
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 18 Sep 2007 13:54:16 -0600
+
+restore-dc (4.0a1-11) restore; urgency=low
+
+  * Fixed the 0-byte quota issue
+  * Fixed sessions when switching users
+
+ -- Adam Lebsack <adam@holonyx.com>  Tue, 18 Sep 2007 08:59:53 -0600
+
+restore-dc (4.0a1-10) restore; urgency=low
+
+  * Added sftp key generator
+  * Added FTP module
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 17 Sep 2007 16:32:16 -0600
+
+restore-dc (4.0a1-9) restore; urgency=low
+
+  * Fixed collation on initial migration
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 17 Sep 2007 09:07:27 -0600
+
+restore-dc (4.0a1-8) restore; urgency=low
+
+  * Fix juggernaut config
+
+ -- Adam Lebsack <adam@holonyx.com>  Mon, 17 Sep 2007 08:32:03 -0600
+
+restore-dc (4.0a1-7) restore; urgency=low
+
+  * Fix local snapper
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Sep 2007 15:57:39 -0600
+
+restore-dc (4.0a1-6) restore; urgency=low
+
+  * Fix reseller creation
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Sep 2007 15:45:48 -0600
+
+restore-dc (4.0a1-5) restore; urgency=low
+
+  * Fix backgroundrb logfile location
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Sep 2007 15:36:37 -0600
+
+restore-dc (4.0a1-4) restore; urgency=low
+
+  * Fix migrations, added restore user and group
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Sep 2007 15:01:22 -0600
+
+restore-dc (4.0a1-3) restore; urgency=low
+
+  * Various bug fixes
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Sep 2007 14:11:17 -0600
+
+restore-dc (4.0a1-2) restore; urgency=low
+
+  * Fix config script
+
+ -- Adam Lebsack <adam@holonyx.com>  Wed, 12 Sep 2007 09:04:14 -0600
+
+restore-dc (4.0a1-1) restore; urgency=low
+
+  * Initial Release
+
+ -- Adam Lebsack <adam@holonyx.com>  Fri, 07 Sep 2007 14:51:28 -0700
+

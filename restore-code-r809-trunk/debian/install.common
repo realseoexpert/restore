@@ -1,0 +1,5 @@
+etc/restore/juggernaut.yml
+etc/restore/restore.yml
+usr/bin/restore
+usr/lib/restore
+var/lib/restore/data

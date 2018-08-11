@@ -1,0 +1,6 @@
+* MySQL Restoration options -- now available via DAV, need something via web frontend
+* Log rotation
+* randomize juggernaut secret
+* get CLI utilities to go thru the backend, instead of executing on their own
+* frontend server also tails juggernaut logs, or juggernaut and rails log to same log
+* better juggernaut integration...  reconnect retries, informing the user, etc.

@@ -1,0 +1,120 @@
+#!/usr/bin/make -f
+# Sample debian/rules that uses debhelper. 
+# GNU copyright 1997 by Joey Hess.
+#
+# This version is for a hypothetical package that builds an
+# architecture-dependant package, as well as an architecture-independent
+# package.
+
+
+RESTORE_VERSION=$(shell cat debian/changelog | head -n 1 | cut -d \( -f 2 | cut -d \) -f 1)
+
+clean: 
+	dh_testdir
+	dh_testroot
+	rm -rf debian/staging
+	rm -rf debian/restore-dc debian/restore-dc-frontend
+	rm -rf debian/restore-ee debian/restore-ee-frontend
+	rm -rf debian/tmp
+	rm -f debian/*.debhelper
+	rm -f install-stamp
+	rm -f debian/*.substvars
+	for x in install config dirs docs postinst postrm prerm restore-backend.init; do \
+		rm -f debian/restore-ee.$$x debian/restore-dc.$$x; \
+	done
+	for x in config dirs install postinst postrm restore-frontend.init; do \
+		rm -f debian/restore-ee-frontend.$$x debian/restore-dc-frontend.$$x; \
+	done
+	rm -f *-stamp
+
+install: DH_OPTIONS=
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	
+	rake makemo
+	mkdir -p debian/tmp
+	mkdir -p debian/tmp/usr/lib/restore
+	mkdir -p debian/tmp/usr/lib/cgi-bin
+	mkdir -p debian/tmp/usr/share/restore-frontend
+	mkdir -p debian/tmp/usr/bin
+	mkdir -p debian/tmp/var/lib/restore/data
+	mkdir -p debian/tmp/var/lib/restore/sessions
+	mkdir -p debian/tmp/etc/restore
+	
+	# common
+	for file in Rakefile config  db  lib  modules script  vendor; do \
+		cp -r $$file debian/tmp/usr/lib/restore; \
+	done
+	echo "CONFIG_PATH = '/etc/restore'" > debian/tmp/usr/lib/restore/config/config_path.rb
+	cp debian/restore.yml debian/tmp/etc/restore
+	cp debian/juggernaut.yml debian/tmp/etc/restore
+	rm -f debian/tmp/usr/lib/restore/config/juggernaut.yml
+	echo "RESTORE_VERSION = '$(RESTORE_VERSION)'" > debian/tmp/usr/lib/restore/lib/restore_version.rb
+	
+	# backend
+	cp -r backend debian/tmp/usr/lib/restore
+	cp debian/restore debian/tmp/usr/bin/restore
+	chmod 755 debian/tmp/usr/bin/restore
+	chmod 01733 debian/tmp/var/lib/restore
+	ln -s ../../../share/rails debian/tmp/usr/lib/restore/vendor/rails
+	
+	# frontend
+	for x in app  config  lib  log Rakefile  script  test  tmp  vendor; do \
+		cp -r frontend/$$x debian/tmp/usr/share/restore-frontend/; \
+	done
+	cp -r frontend/public debian/tmp/usr/lib/cgi-bin/restore-frontend
+	cp debian/dispatch.fcgi debian/tmp/usr/lib/cgi-bin/restore-frontend/
+	cp debian/apache.conf debian/tmp/etc/restore/apache.conf
+	rm -f debian/tmp/usr/lib/cgi-bin/restore-frontend/.htaccess
+	ln -s ../../lib/cgi-bin/restore-frontend debian/tmp/usr/share/restore-frontend/public
+	echo "RESTORE_ROOT = '/usr/lib/restore'" > debian/tmp/usr/share/restore-frontend/config/restore_root.rb
+	
+	for edition in restore-dc restore-ee; do \
+		for file in install config dirs docs postinst postrm prerm restore-backend.init; do \
+			cat debian/$$file.common | sed -e "s|%PACKAGE%|$$edition|" > debian/$$edition-common.$$file; \
+		done; \
+		for file in config dirs install postinst postrm restore-frontend.init; do \
+			cat debian/$$file.frontend-common | sed -e "s|%PACKAGE%|$$edition|" > debian/$$edition-frontend.$$file; \
+		done; \
+	done
+	
+	dh_installdirs
+	dh_install -X.svn --sourcedir=debian/tmp
+	rm -f debian/restore-dc-common/usr/lib/restore/lib/restore/installation/enterprise.rb
+	rm -f debian/restore-ee-common/usr/lib/restore/lib/restore/account/dc_admin.rb
+	rm -f debian/restore-ee-common/usr/lib/restore/lib/restore/account/reseller.rb
+	rm -f debian/restore-ee-common/usr/lib/restore/lib/restore/installation/data_center.rb
+	rm -rf debian/restore-ee-frontend/usr/share/restore-frontend/app/controllers/reseller
+	rm -rf debian/restore-ee-frontend/usr/share/restore-frontend/app/controllers/datacenter
+	rm -rf debian/restore-ee-frontend/usr/share/restore-frontend/app/views/reseller
+	rm -rf debian/restore-ee-frontend/usr/share/restore-frontend/app/views/datacenter
+	touch install-stamp
+
+
+# Build architecture-dependent files here.
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+	dh_installexamples
+	dh_installlogrotate
+	dh_installman
+	dh_installinfo
+	dh_installchangelogs
+	dh_installdebconf
+	dh_compress
+	dh_fixperms
+	dh_installinit --name=restore-frontend
+	dh_installinit --name=restore-backend
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+
+binary-arch: build install
+binary: binary-indep binary-arch
+
+.PHONY: build clean binary binary-indep binary-arch install

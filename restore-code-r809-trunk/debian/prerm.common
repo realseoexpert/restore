@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. /usr/share/debconf/confmodule
+
+#DEBHELPER#
+. /usr/share/dbconfig-common/dpkg/prerm
+dbc_go %PACKAGE%-common $@
+
+
+exit 0
